@@ -109,7 +109,7 @@ custom_css = f"""
 .user_message {{
     align-self: flex-end;
     background-color: #FFFDD0;
-    color: #2E8B57;
+    color: #5A9BD5;
     border-radius: 15px;
     padding: 10px 15px;
     max-width: 80%;
@@ -126,7 +126,7 @@ custom_css = f"""
 .bot_message {{
     align-self: flex-start;
     background-color: #FFFDD0;
-    color: #5A9BD5;
+    color: #2E8B57;
     border-radius: 15px;
     padding: 10px 15px;
     max-width: 80%;
