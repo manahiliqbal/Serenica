@@ -75,7 +75,6 @@ encoded_image = get_base64_encoded_image(image_path)
 
 custom_css = f"""
 <style>
-/* Global box-sizing to include padding and border in element's total width and height */
 * {{
     box-sizing: border-box;
 }}
@@ -91,21 +90,15 @@ custom_css = f"""
     margin: 0;
 }}
 
-/* Chat container */
 .chat-container {{
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Increased space between messages */
+    gap: 15px; 
     max-height: 70vh;
     overflow-y: auto;
     padding: 10px;
-    /* Removed border and background-color to eliminate white rectangle */
-    /* border: 1px solid #B2EBF2; */
-    /* border-radius: 10px; */
-    /* background-color: rgba(255, 255, 255, 0.8); */
 }}
 
-/* User message styling */
 .user_message {{
     align-self: flex-end;
     background-color: #FFFDD0;
@@ -118,11 +111,10 @@ custom_css = f"""
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    margin-bottom: 10px; /* Added margin-bottom to prevent overlapping */
-    transition: all 0.3s ease; /* Optional: Smooth appearance */
+    margin-bottom: 10px; 
+    transition: all 0.3s ease; 
 }}
 
-/* Bot message styling */
 .bot_message {{
     align-self: flex-start;
     background-color: #FFFDD0;
@@ -135,11 +127,10 @@ custom_css = f"""
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    margin-bottom: 10px; /* Added margin-bottom to prevent overlapping */
-    transition: all 0.3s ease; /* Optional: Smooth appearance */
+    margin-bottom: 10px; 
+    transition: all 0.3s ease; 
 }}
 
-/* Input and Button Styling */
 input[type="text"] {{
     border: 2px solid #81D4FA;
     border-radius: 10px;
@@ -196,7 +187,6 @@ button:disabled {{
     background-color: rgba(0,0,0,0.05);
 }}
 
-/* Timestamp styling (optional) */
 .timestamp {{
     display: block;
     text-align: right;
