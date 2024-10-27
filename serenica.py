@@ -47,7 +47,7 @@ def generate_response(user_input):
         response = co.generate(
             model='command',
             prompt=prompt,
-            max_tokens=250,
+            max_tokens=350,
             temperature=0.7,
             stop_sequences=["User:"]
         )
